@@ -31,7 +31,7 @@ nav ul li a {
     display: block;
 }
 
-nav ul li a:hover {
+ nav ul li a:hover {
     background-color: #34495e;
 }
 
@@ -47,6 +47,11 @@ section {
 
 h1, h2, h3 {
     color: #2c3e50;
+
+}
+
+.title {
+    color: #fff;
 
 }
 
@@ -130,4 +135,56 @@ footer {
 
 .card a:hover {
     text-decoration: underline;
+}
+
+.input_dashboard {
+    display: none;
+}
+
+.li-menu-dashboard {
+    position: relative; /* Esto permite que el submenú se posicione respecto a este punto */
+    list-style: none;
+}
+
+.label_dashboard  {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+    user-select: none;
+    font-weight: normal;
+}
+
+.label_dashboard:hover{
+    background-color: #34495e;
+}
+
+.ul-dashboard {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.ul-dashboard li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.ul-dashboard li a:hover {
+    background-color: #f1f1f1;
+}
+
+.input_dashboard:checked ~ .ul-dashboard {
+    display: block;
 }
