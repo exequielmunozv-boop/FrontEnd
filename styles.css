@@ -142,7 +142,7 @@ footer {
 }
 
 .li-menu-dashboard {
-    position: relative; /* Esto permite que el submenú se posicione respecto a este punto */
+    position: relative;
     list-style: none;
 }
 
